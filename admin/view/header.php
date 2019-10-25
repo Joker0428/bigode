@@ -23,10 +23,10 @@
         <a class="nav-link" href="index.php">Home </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="clientes.php">Lista de clientes</a>
+        <a class="nav-link" href="#">Lista de clientes</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="cliente-novo.php">Novo Cliente</a>
+        <a class="nav-link" href="cadastro-depar.php">Novo Cliente</a>
       </li>
       
     </ul>
