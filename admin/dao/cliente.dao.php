@@ -12,7 +12,7 @@ class DAOCliente{
         $con->bindValue(":email", $cliente->getEmail());
         $con->bindValue(":cpf", $cliente->getCpf());
         $con->execute();
-        echo "Cadastro com sucesso";
+        return "Cadastro com sucesso";
 
     }
 }

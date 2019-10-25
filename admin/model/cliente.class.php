@@ -63,9 +63,3 @@ class Cliente{
 }
 
 ?>
-
-
-
-
-
-}

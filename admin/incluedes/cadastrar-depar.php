@@ -1,21 +1,21 @@
 <?php
 
     include 'model/conexao.php';
-    include 'model/depar.class.php';
-    include 'dao/depar.dao.php';
+    include 'model/departamento.class.php';
+    include 'dao/departamento.dao.php';
 
     if($_POST){
 
         try{
-            $obj = new Depar();
+            $obj = new Departamento();
             $obj->setNome($_POST['nome']);
            
 
-            $DAO = new DAODepar();
-            $DAO->cadastrar($obj);
+            $DAO = new DAODepartamento();
+            $msg = $DAO->cadastrar($obj);
 
         }catch(Exception $e){
-            echo $e->getMessage();
+            $msg = $e->getMessage();
         }
     }
 

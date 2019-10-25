@@ -15,10 +15,10 @@
             $obj->setCpf($_POST['cpf']);
 
             $DAO = new DAOCliente();
-            $DAO->cadastrar($obj);
+            $msg = $DAO->cadastrar($obj);
 
         }catch(Exception $e){
-            echo $e->getMessage();
+            $msg = $e->getMenssagem();
         }
     }
 

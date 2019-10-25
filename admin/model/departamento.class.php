@@ -1,6 +1,6 @@
 <?php
 
-class Depar{
+class Departamento{
     private $id;
     private $nome;
 
