@@ -15,6 +15,11 @@ class DAOCliente{
         return "Cadastro com sucesso";
 
     }
+    public function listaClientes(){
+        $sql = "SELECT * FROM cliente";
+        $con = conexao::getInstance()->prepare($sql);
+        $con->execute();
+    }
 }
 
 
