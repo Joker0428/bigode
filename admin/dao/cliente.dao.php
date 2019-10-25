@@ -19,6 +19,14 @@ class DAOCliente{
         $sql = "SELECT * FROM cliente";
         $con = conexao::getInstance()->prepare($sql);
         $con->execute();
+
+        $lista = array();
+
+        while($cliente = $con->fetch(PDO::FETCH_ASSOC)){
+            $lista[] = $cliente;
+        }
+
+        return $lista;
     }
 }
 
