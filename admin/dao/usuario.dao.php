@@ -13,6 +13,12 @@ class DAOUsuario{
 
     }
 
+    public function buscarPorId($id){
+        $sql = "SELECT * FROM usuario WHERE pk_usuario = :id";
+        $con = conexao::getInstance()->prepare($sql);
+        $con->bindValue(":id",$id);
+    }
+
 }
 
 
